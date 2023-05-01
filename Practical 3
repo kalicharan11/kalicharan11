@@ -1,0 +1,30 @@
+Aim: Controlling ON/OFF of an LED using switch.
+Codes:
+// Define the input and output pins
+const int switchPin = 2;
+const int ledPin = 13;
+
+void setup() {
+  // Initialize the input and output pins
+  pinMode(switchPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // Read the input from the switch
+  int switchState = digitalRead(switchPin);
+  
+  // If the switch is pressed, turn on the LED
+  if (switchState == HIGH) {
+    digitalWrite(ledPin, HIGH);
+  }
+  // Otherwise, turn off the LED
+  else {
+    digitalWrite(ledPin, LOW);
+  }
+}
+Precautions and sources of error:
+•	Ensure that the circuit connections are proper.
+•	Different devices should be attached to the respective pins of Uno.
+•	Codes should be written in C++ correctly.
+•	Ground (GND) must be connected.
