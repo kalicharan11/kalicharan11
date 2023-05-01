@@ -1,0 +1,21 @@
+Aim: Use the potentiometer to change the red LED intensity from 0 to maximum in 256 steps.
+Codes:
+//changing brightness of LED using potentiometer
+
+#define LED_PIN 11
+#define POTENTIOMETER_PIN A1
+void setup()
+{
+  pinMode(LED_PIN, OUTPUT);
+}
+void loop()
+{
+  int potentiometerValue = analogRead(POTENTIOMETER_PIN);
+  int brightness = potentiometerValue/4 ;
+  analogWrite(LED_PIN, brightness);
+}
+Precautions and sources of error:
+•	Ensure that the circuit connections are proper.
+•	Different devices should be attached to the respective pins of Uno.
+•	Codes should be written in C++ correctly.
+•	Ground (GND) must be connected.
