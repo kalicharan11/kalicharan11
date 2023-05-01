@@ -21,7 +21,7 @@ void loop() {
   // Otherwise, turn off the LED
   else {
     digitalWrite(ledPin, LOW);
-  }
+ }
 }
 Precautions and sources of error:
 •	Ensure that the circuit connections are proper.
