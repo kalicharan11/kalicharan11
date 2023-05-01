@@ -1,0 +1,21 @@
+Aim: Hello LED- Flash LED at a rate such that the LED appears 
+always on. Estimate the onset of the rate when the LED appears to stay 
+on.
+Codes:
+// C++ code
+//
+const int ledPin = 13;
+void setup() {
+ pinMode(ledPin, OUTPUT);
+}
+void loop() {
+ digitalWrite(ledPin, HIGH); // Turn on LED
+ delay(10); // Wait for 10 milliseconds
+ digitalWrite(ledPin, LOW); // Turn off LED
+ delay(10); // Wait for 10 milliseconds
+}
+Precautions and sources of error:
+• Ensure that the circuit connections are proper.
+• Different devices should be attached to the respective pins of Uno.
+• Codes should be written in C++ correctly.
+• Ground (GND) must be connected.
